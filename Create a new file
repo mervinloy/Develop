@@ -4,9 +4,9 @@ import java.io.IOException;  // Import the IOException class to handle errors
 public class CreateFile {
   public static void main(String[] args) {
     try {
-      File myObj = new File("filename.txt");
-      if (myObj.createNewFile()) {
-        System.out.println("File created: " + myObj.getName());
+      File file = new File("filename.txt");
+      if (file.createNewFile()) {
+        System.out.println("File created: " + file.getName());
       } else {
         System.out.println("File already exists.");
       }
